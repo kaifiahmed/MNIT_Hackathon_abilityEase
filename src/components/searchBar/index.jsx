@@ -1,17 +1,18 @@
 import React from 'react'
 import searchbutton from '../../assets/images/searchbutton.png'
+import Wrapper from './style'
 
 const SearchBar
  = () => {
   return (
-    <div>
-    <input
-   type="text"
-   placeholder="Enter your search query"
-   />
-   <input type="button" className='button'/>
-   <img src={searchbutton}  alt='image' height='50px'/>
-</div>
+    <Wrapper>
+    <div className="search-container">
+      <input type="text" placeholder="Enter your search query" />
+      <button type="submit" className="button">
+        <img src={searchbutton} alt="Search" height="50px" />
+      </button>
+    </div>
+  </Wrapper>
   )
 }
 
