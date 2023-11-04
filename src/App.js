@@ -1,17 +1,23 @@
 import React from 'react'
 import NavigationBar from './components/navigationBar'
 import SearchBar from './components/searchBar'
-import Feactures from './components/features'
 import Features from './components/features'
+import Newresult from './components/newresult'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const App = () => {
   return (
-    <div>
-      <NavigationBar />
-      <SearchBar/>
-      <Features />
-    </div>
-  )
+    <Router>
+    <Routes>
+      <Route path="/" element={<Features />} />
+      <Route path="/news-results" element={<Newresult />} />
+      <Route path="/navigation" element={<NavigationBar />} />
+      <Route path="/searchbar" element={<SearchBar />} />
+      <Route path="/features" element={<Features />} />
+      
+    </Routes>
+  </Router>
+)
 }
 
 export default App
