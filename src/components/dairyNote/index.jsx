@@ -1,12 +1,8 @@
-import React, { useState } from 'react'
-import searchbutton from '../../assets/images/searchbutton.png'
-import Wrapper from './style'
-import mikeimg from '../../assets/images/microphone.png'
+import React ,{useState} from 'react'
+import Wrapper from './style';
 
-
-
-const SearchBar = () => {
-
+const DairyNote = () => {
+ 
   //setting speech recog
   const [searchText, setSearchText] = useState('');
   const recognition = window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -34,14 +30,15 @@ const SearchBar = () => {
       value={searchText}
       onChange={(e) => setSearchText(e.target.value)} />
       <button type="submit" className="button" onClick={startVoiceRecognition}>
-        <img src={mikeimg} alt="Search" height="50px" />
+        {/* <img src={mikeimg} alt="Search" height="50px" /> */}
       </button>
       <button type="submit" className="button">
-        <img src={searchbutton} alt="Search" height="50px" />
+        {/* <img src={searchbutton} alt="Search" height="50px" /> */}
       </button>
     </div>
   </Wrapper>
   )
 }
 
-export default SearchBar
+
+export default DairyNote
