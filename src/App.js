@@ -1,13 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-import SearchBar from './components/searchBar';
+import React from 'react'
+import NavigationBar from './components/navigationBar'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <SearchBar />
+    <div>
+      <NavigationBar />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
