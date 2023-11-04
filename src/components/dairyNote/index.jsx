@@ -1,6 +1,7 @@
-import React from 'react'
+import React ,{useState} from 'react'
+import Wrapper from './style';
 
-const DairyNoat = () => {
+const DairyNote = () => {
  
   //setting speech recog
   const [searchText, setSearchText] = useState('');
@@ -29,10 +30,10 @@ const DairyNoat = () => {
       value={searchText}
       onChange={(e) => setSearchText(e.target.value)} />
       <button type="submit" className="button" onClick={startVoiceRecognition}>
-        <img src={mikeimg} alt="Search" height="50px" />
+        {/* <img src={mikeimg} alt="Search" height="50px" /> */}
       </button>
       <button type="submit" className="button">
-        <img src={searchbutton} alt="Search" height="50px" />
+        {/* <img src={searchbutton} alt="Search" height="50px" /> */}
       </button>
     </div>
   </Wrapper>
@@ -40,4 +41,4 @@ const DairyNoat = () => {
 }
 
 
-export default DairyNoat
+export default DairyNote
