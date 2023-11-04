@@ -1,10 +1,12 @@
-// import logo from './logo.svg';
-// import './App.css';
+import React from 'react'
+import NavigationBar from './components/navigationBar'
 
-function App() {
+const App = () => {
   return (
-    <div>hello</div>
-  );
+    <div>
+      <NavigationBar />
+    </div>
+  )
 }
 
-export default App;
+export default App
