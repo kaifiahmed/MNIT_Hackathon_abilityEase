@@ -9,6 +9,7 @@ const NavigationBar = () => {
       <div className="logo">
         <img src= {logo} alt="Logo" />
       </div>
+      <h1 className="website-name">Ability Ease</h1>
       <div className="nav-items">
         <a href="#">Home</a>
         <a href="#">About Us</a>
