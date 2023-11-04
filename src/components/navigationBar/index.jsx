@@ -1,5 +1,6 @@
 import React from 'react'
 import Wrapper from './style'
+import logo from '../../assets/images/logo.jpg'
 
 const NavigationBar = () => {
   return (
