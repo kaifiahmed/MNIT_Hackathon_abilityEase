@@ -11,7 +11,10 @@ const Features = () => {
         <div className='box' id='one' >
         <img src= {news} alt="Logo" width='250px' height='250px' />
         </div>
-        <div className='box' id='two'>Daily Record</div>
+        {/* <Link className="forgot" to="/resetPassword">
+              Forgot Password ?
+            </Link> */}
+        <div className='box' id='two'><>Daiy Record</></div>
         <div className='box' id='three'>Mail</div>
         <div className='box' id='four'>order services</div>
       </div>

@@ -1,12 +1,7 @@
-import React, { useState } from 'react'
-import searchbutton from '../../assets/images/searchbutton.png'
-import Wrapper from './style'
-import mikeimg from '../../assets/images/microphone.png'
+import React from 'react'
 
-
-
-const SearchBar = () => {
-
+const DairyNoat = () => {
+ 
   //setting speech recog
   const [searchText, setSearchText] = useState('');
   const recognition = window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -44,4 +39,5 @@ const SearchBar = () => {
   )
 }
 
-export default SearchBar
+
+export default DairyNoat
