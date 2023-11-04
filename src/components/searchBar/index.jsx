@@ -6,13 +6,13 @@ const SearchBar
  = () => {
   return (
     <Wrapper>
-    <input
-   type="text"
-   placeholder="Enter your search query"
-   />
-   <input type="button" className='button'/>
-   <img src={searchbutton}  alt='image' height='50px'/>
-</Wrapper>
+    <div className="search-container">
+      <input type="text" placeholder="Enter your search query" />
+      <button type="submit" className="button">
+        <img src={searchbutton} alt="Search" height="50px" />
+      </button>
+    </div>
+  </Wrapper>
   )
 }
 
