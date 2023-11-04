@@ -12,12 +12,21 @@ const Wrapper = styled.div`
     align-items: center;
   }
 
+  .logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+
   .logo img {
     max-height: 50px; /* Set the max height for the logo */
   }
   .website-name {
-    font-size: 20px; /* Adjust font size as needed */
+    font-size: 26px; /* Adjust font size as needed */
     color: #000;
+
     margin-left: 10px;
      /* Add some space between logo and website name */
   }
@@ -26,6 +35,8 @@ const Wrapper = styled.div`
 
   .nav-items a {
     color: #000;
+    padding: 0 20px;
+    font-size:26px;
     text-decoration: none;
     margin-left: 20px; /* Adjust the spacing between navigation items */
   }

@@ -5,11 +5,12 @@ import logo from '../../assets/images/logo.jpg'
 const NavigationBar = () => {
   return (
     <Wrapper>
-      <div className="navbar">
       <div className="logo">
         <img src= {logo} alt="Logo" />
+        <h1 className="website-name">Ability Ease</h1>
       </div>
-      <h1 className="website-name">Ability Ease</h1>
+      <div className="navbar">
+      
       <div className="nav-items">
         <a href="#">Home</a>
         <a href="#">About Us</a>

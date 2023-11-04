@@ -5,7 +5,8 @@ const Wrapper = styled.div`
     margin: 30px;
     border: solid black 1px;
     display: flex;
-    justify-content: space-evenly; 
+    overflow: hidden;
+    justify-content: space-between; 
     font-weight: bold;
     border-radius: 10px;
     width: 400px;
@@ -15,7 +16,11 @@ const Wrapper = styled.div`
     padding: 10px;
     margin: 0;
     border: none;
+    outline:none;
     border-radius: 4px;
+    font-size:20px;
+
+
   }
   .button {
     background-color: transparent;
