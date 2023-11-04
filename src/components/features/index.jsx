@@ -9,7 +9,7 @@ const Features = () => {
     <div className="features-container">
       <div className='main'>
         <div className='box' id='one' >
-        <img src= {news} alt="Logo" />
+        <img src= {news} alt="Logo" width='250px' height='250px' />
         </div>
         <div className='box' id='two'>Daily Record</div>
         <div className='box' id='three'>Mail</div>
