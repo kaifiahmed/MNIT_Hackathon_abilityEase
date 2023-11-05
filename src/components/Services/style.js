@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Ffree-photos-vectors%2Fservice-background&psig=AOvVaw2_uXMAOZs9-TzlImJpygPk&ust=1699252396958000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCIDaic-erIIDFQAAAAAdAAAAABAE');
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3GorApnPGD1dt2PN4Ltpwrxigj-5CKQSxUA&usqp=CAU');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -39,7 +39,8 @@ export const Wrapper = styled.div`
 }
 
 h1 {
-  font-size: 24px;
+  margin-bottom : 30px;
+  font-size: 60px;
   text-align: center;
 }
 
