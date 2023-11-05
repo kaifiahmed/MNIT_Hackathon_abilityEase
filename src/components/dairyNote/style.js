@@ -10,6 +10,15 @@ const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
 
+    .container1{
+        gap: 10px;
+        display: flex;
+    width: 100%;
+    // flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
 input[type="text"] {
         width: 80%;
         height: 60vh;

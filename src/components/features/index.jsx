@@ -1,6 +1,6 @@
 // import React, { useState } from 'react';
 // import Wrapper from './style';
-// import { Link} from "react-router-dom";
+import { Link} from "react-router-dom";
 // import { useNavigate } from 'react-router-dom';
 // import axios from 'axios';
 // import news from '../../assets/images/news.png'
@@ -75,10 +75,10 @@ const Features = () => {
             <button onClick={getNews}>Fetch news</button>
             <img src={news} alt="Logo" width='250px' height='250px' />
           </div>
-          <div className='box' id='two'>
-          <img src={dairy} alt="Logo" width='250px' height='250px' />
-
-          </div>
+          <Link className="forgot" to="/dairy">
+            <div className='box' id='two'>
+            <img src= {dairy} alt="Logo" width='250px' height='250px' /></div>
+           </Link>
           <div className='box' id='three'>Mail</div>
           <div className='box' id='four'>order services</div>
         </div>
