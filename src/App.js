@@ -13,7 +13,11 @@ import AboutUs from './components/aboutus';
 import Services from './components/Services';
 
 
+<<<<<<< HEAD
 import SupportPage from './components/supportPage';
+=======
+import Textcoat from './components/coat';
+>>>>>>> 2d1e4cefbe3758e4084dcdf5b25c02ba34e3ce3c
 
 
 const App = () => {
@@ -25,8 +29,13 @@ const App = () => {
       {/* <Features /> */}
       {/* <VoiceSearch /> */}
       <Routes>
+<<<<<<< HEAD
         <Route path='/' element={<><SearchBar/> <Features /></>} />
         <Route path="/dairy" element={<DairyNote/>} /> 
+=======
+        <Route path='/' element={<><SearchBar/>  <Features /></>} />
+        <Route path="/dairy" element={<DairyNote/>} /> {/* 👈 Rfasfenders at /app/ */}
+>>>>>>> 2d1e4cefbe3758e4084dcdf5b25c02ba34e3ce3c
         <Route path="/news-results" element={<Newresult/>} />
         <Route path="/aboutus" element={<AboutUs/>} /> 
         <Route path="/Services" element={<Services/>} />

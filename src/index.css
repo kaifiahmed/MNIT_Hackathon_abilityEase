@@ -5,6 +5,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('../src/assets/images/pngtree-helping-the-disabled-and-helping-the-public-welfare-poster-background-image_134095.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  
+}
+#root{
+  
 }
 
 code {

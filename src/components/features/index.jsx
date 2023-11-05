@@ -52,6 +52,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import news from '../../assets/images/news.png';
 import dairy from '../../assets/images/dairy.jpeg';
+import emailicon from '../../assets/images/gmail.png'
 import Wrapper from './style';
 import { useNavigate } from 'react-router-dom';
 
@@ -70,17 +71,29 @@ const Features = () => {
   return (
     <Wrapper>
       <div className="features-container">
+        
         <div className='main'>
+          
+          <Link className="" to="/news-results" onClick={getNews}>
           <div className='box' id='one'>
-            <button onClick={getNews}>Fetch news</button>
             <img src={news} alt="Logo" width='250px' height='250px' />
-          </div>
-          <Link className="forgot" to="/dairy">
-            <div className='box' id='two'>
-            <img src= {dairy} alt="Logo" width='250px' height='250px' /></div>
+            <div className='' id='three'>Take Notes</div></div>  
            </Link>
-          <div className='box' id='three'>Mail</div>
+          <Link className="" to="/dairy">
+            <div className='box' id='two'>
+            <img src= {dairy} alt="Logo" width='250px' height='250px' />
+            <div className='' id='three'>Take Notes</div></div>  
+           </Link>
+
+           <Link className="" to="#">
+            <div className='box' id='two'>
+            <img src= {emailicon} alt="Logo" width='250px' height='250px' />
+            <div className='' id='three'>Send a Mail</div></div>
+           </Link>
+          
           <div className='box' id='four'>order services</div>
+          <div className='box' id='five'>More</div>
+
         </div>
       </div>
       <div className="container">
