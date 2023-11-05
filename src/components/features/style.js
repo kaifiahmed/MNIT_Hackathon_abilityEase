@@ -14,7 +14,7 @@ const Wrapper = styled.div`
     padding: 0 120px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center the boxes */
+    justify-content: ; /* Center the boxes */
   }
 
   .box {

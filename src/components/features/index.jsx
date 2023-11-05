@@ -1,3 +1,53 @@
+// import React, { useState } from 'react';
+// import Wrapper from './style';
+import { Link} from "react-router-dom";
+// import { useNavigate } from 'react-router-dom';
+// import axios from 'axios';
+// import news from '../../assets/images/news.png'
+// import dairy from '../../assets/images/dairy.jpeg'
+
+
+// const Features = () => {
+
+  
+//     const navigate = useNavigate(); // Initialize navigate
+//     const [data, setData] = useState([]);
+  
+//     const getNews = () => {
+//       axios.get("https://newsapi.org/v2/top-headlines?country=in&apiKey=9bfd7540afd54199b1a52c8dbf856d2c&q=india")
+//        .then((response) => {
+//         setData(response.data.articles);
+//         console.log(response);
+//         navigate('/news-results', { state: { newsData: response.data.articles } }); // Use navigate instead of history.push
+//        })
+//     }
+
+//   return (
+//     <Wrapper>
+//     <div className="features-container">
+//       <div className='main'>
+//         <button onClick={getNews}>Fetch news</button>
+//         <div className='box' id='one' >
+//         <img src= {news} alt="Logo" width='250px' height='250px' />
+//         </div>
+        
+//         <Link className="forgot" to="/dairy">
+//         <div className='box' id='two'>
+//           <img src= {dairy} alt="Logo" width='250px' height='250px' /></div>
+//         </Link>
+        
+//         <div className='box' id='three'>Mail</div>
+//         <div className='box' id='four'>order services</div>
+//         <div className='box' id='five'>More</div>
+
+//       </div>
+//     </div>
+//     </Wrapper>
+//   )
+// }
+
+// export default Features;
+
 import React, { useState } from 'react';
 import axios from 'axios';
 import news from '../../assets/images/news.png';
@@ -25,10 +75,10 @@ const Features = () => {
             <button onClick={getNews}>Fetch news</button>
             <img src={news} alt="Logo" width='250px' height='250px' />
           </div>
-          <div className='box' id='two'>
-          <img src={dairy} alt="Logo" width='250px' height='250px' />
-
-          </div>
+          <Link className="forgot" to="/dairy">
+            <div className='box' id='two'>
+            <img src= {dairy} alt="Logo" width='250px' height='250px' /></div>
+           </Link>
           <div className='box' id='three'>Mail</div>
           <div className='box' id='four'>order services</div>
         </div>
@@ -53,6 +103,7 @@ const Features = () => {
         </div>
       </div>
     </Wrapper>
+   
   )
 }
 
