@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
+max-height : 100%;
 max-width: 100%;
   margin: 0 auto;
   text-align: center;
