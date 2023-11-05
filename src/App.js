@@ -10,6 +10,9 @@ import DairyNote from './components/dairyNote'
 import Footer from './components/footer'
 import Newresult from './components/newresult';
 import AboutUs from './components/aboutus';
+import Services from './components/Services';
+
+
 import Textcoat from './components/coat';
 
 
@@ -25,10 +28,12 @@ const App = () => {
         <Route path='/' element={<><SearchBar/>  <Features /></>} />
         <Route path="/dairy" element={<DairyNote/>} /> {/* 👈 Rfasfenders at /app/ */}
         <Route path="/news-results" element={<Newresult/>} />
-        <Route path="/aboutus" element={<AboutUs/>} /> {/* 👈 Rfasfenders at /app/ */}
+        <Route path="/aboutus" element={<AboutUs/>} /> 
+        <Route path="/Services" element={<Services/>} /> {/* 👈 Rfasfenders at /app/ */}
+        {/* 👈 Rfasfenders at /app/ */}
 
       </Routes>
-      <Footer/>
+      {/* <Footer/> */}
     </BrowserRouter>
     </div>
   )
