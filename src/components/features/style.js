@@ -10,17 +10,18 @@ const Wrapper = styled.div`
     padding: 0 120px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center the boxes */
+    justify-content: ; /* Center the boxes */
   }
 
   .box {
-    min-width: 250px;
-    min-height:250px;
-    margin: 10px;
-    background-color: #bbdfff;
+    min-width: 300px;
+    min-height:300px;
+    margin: 50px;
+    //background-color: #bbdfff;
     border: 1px solid #000;
-    flex: 1; /* Each box takes up equal space in the row */
+    flex: 2; /* Each box takes up equal space in the row */
     box-sizing:border-box;
+    border-radius : 20px;
   }
 `;
 
