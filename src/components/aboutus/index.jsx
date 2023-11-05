@@ -10,9 +10,14 @@ const AboutUs = () => {
         to providing high-quality content and services.
       </p>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      "At AbilityEase, we are dedicated to providing seamless and accessible solutions to 
+      empower individuals with diverse abilities. Our mission is to break down barriers and
+       create a more inclusive environment for everyone. With a team of passionate 
+       professionals, we strive to develop innovative technologies and services that
+        enhance the quality of life for people of all abilities. Join us on this journey
+         towards a more inclusive and accessible future."
+
+
       </p>
     </Wrapper>
   );

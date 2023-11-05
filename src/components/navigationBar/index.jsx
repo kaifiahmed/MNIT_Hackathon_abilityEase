@@ -1,5 +1,6 @@
 import React from 'react'
 import Wrapper from './style'
+import { Link } from 'react-router-dom';
 import logo from '../../assets/images/logo.jpg'
 
 const NavigationBar = () => {
@@ -12,10 +13,10 @@ const NavigationBar = () => {
       <div className="navbar">
       
       <div className="nav-items">
-        <a href="/">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Services</a>
-        <a href="#">Support</a>
+      <Link to="/">Home</Link>
+          <Link to="/aboutus">About Us</Link>
+          <Link to="/services">Services</Link>
+          <Link to="/support">Support</Link>
       </div>
     </div>
     </Wrapper>
