@@ -32,7 +32,7 @@ const App = () => {
         {/* 👈 Rfasfenders at /app/ */}
 
       </Routes>
-      <Footer/>
+      {/* <Footer/> */}
     </BrowserRouter>
     </div>
   )
