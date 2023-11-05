@@ -26,9 +26,12 @@ const Wrapper = styled.div`
     overflow:hidden;
 }
 input[type="text"] {
+    padding:10px;
         width: 100%;
         outline:none;
         border:none;
+        background-color: transparent;
+
         
 }
 `

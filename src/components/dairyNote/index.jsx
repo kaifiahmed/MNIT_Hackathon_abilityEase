@@ -31,7 +31,7 @@ const DairyNote = () => {
         <h1>Write something here with your voice</h1>
       <div className="input">
           <input type="text"
-          placeholder="Enter your search query"
+          placeholder="Say to write your notes or just type."
           value={searchText}
           onChange={(e) => setSearchText(e.target.value)} />
       </div>
