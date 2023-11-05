@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import news from '../../assets/images/news.png';
-//import dairy from '../../assets/images/dairy.webp';
+import dairy from '../../assets/images/dairy.jpeg';
 import Wrapper from './style';
 import { useNavigate } from 'react-router-dom';
 
@@ -26,7 +26,7 @@ const Features = () => {
             <img src={news} alt="Logo" width='250px' height='250px' />
           </div>
           <div className='box' id='two'>
-          {/* <img src={dairy} alt="Logo" width='250px' height='250px' /> */}
+          <img src={dairy} alt="Logo" width='250px' height='250px' />
 
           </div>
           <div className='box' id='three'>Mail</div>

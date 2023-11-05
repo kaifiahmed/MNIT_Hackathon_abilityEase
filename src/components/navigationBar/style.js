@@ -4,7 +4,7 @@ const Wrapper = styled.div`
   display: flex;
  justify-content: space-between;
   align-items: center;
-  background-color: #bbdfff;
+  // background-color: #bbdfff;
   padding: 7px 15px;
 
   .navbar {
@@ -42,7 +42,9 @@ const Wrapper = styled.div`
   }
 
   .nav-items a:hover {
-    text-decoration: underline;
+    // text-decoration: underline;
+    background-color:grey;
+    border-radius:12px;
   }
 `;
 

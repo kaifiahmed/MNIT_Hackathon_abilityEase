@@ -1,5 +1,7 @@
 import React ,{useState} from 'react'
 import Wrapper from './style';
+import mikeimg from '../../assets/images/microphone.png'
+
 
 const DairyNote = () => {
  
@@ -24,17 +26,18 @@ const DairyNote = () => {
 
   return (
     <Wrapper>
-    <div className="search-container">
+    <div className="container">
+        <h1>Write something her with your voice</h1>
       <input type="text" 
       placeholder="Enter your search query"
       value={searchText}
       onChange={(e) => setSearchText(e.target.value)} />
       <button type="submit" className="button" onClick={startVoiceRecognition}>
-        {/* <img src={mikeimg} alt="Search" height="50px" /> */}
+        <img src={mikeimg} alt="Search" height="50px" />
       </button>
-      <button type="submit" className="button">
-        {/* <img src={searchbutton} alt="Search" height="50px" /> */}
-      </button>
+      {/* <button type="submit" className="button">
+        <img src={searchbutton} alt="Search" height="50px" />
+      </button> */}
     </div>
   </Wrapper>
   )

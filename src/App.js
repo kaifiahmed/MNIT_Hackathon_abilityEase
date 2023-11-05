@@ -1,38 +1,34 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import NavigationBar from './components/navigationBar';
-import Features from './components/features';
-import SearchBar from './components/searchBar';
+import React from 'react'
+import NavigationBar from './components/navigationBar'
+import SearchBar from './components/searchBar'
+import Features from './components/features'
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import DairyNote from './components/dairyNote'
+import Footer from './components/footer'
 import Newresult from './components/newresult';
 import AboutUs from './components/aboutus';
 
+
 const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <NavigationBar />
-              <SearchBar />
-          
-              <Features />
-              </>
-          }
-        />
-        <Route path="/news-results" element={<Newresult/>} />
-     
-
-      <Route path="/navigation" element={<NavigationBar />} />
-      <Route path="/searchbar" element={<SearchBar />} />
-      <Route path="/features" element={<Features />} />
-      <Route path="/aboutus" element={<AboutUs />} />
-
+    <div>
       
-    </Routes>
-  </Router>
-)
+      <BrowserRouter>
+     
+      {/* <Features /> */}
+      {/* <VoiceSearch /> */}
+      <Routes>
+        <Route path='/' element={<><NavigationBar /><SearchBar/> <Features /></>} />
+        <Route path="/dairy" element={<DairyNote/>} /> {/* 👈 Rfasfenders at /app/ */}
+        <Route path="/news-results" element={<Newresult/>} />
+        <Route path="/aboutus" element={<AboutUs/>} /> {/* 👈 Rfasfenders at /app/ */}
+
+      </Routes>
+      <Footer/>
+    </BrowserRouter>
+    </div>
+  )
 }
 
 export default App

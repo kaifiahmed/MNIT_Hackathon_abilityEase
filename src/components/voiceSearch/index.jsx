@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
-// import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap.min.css'; // Note the updated import path
 import Button from 'react-bootstrap/Button';
+
+
+
 
 const VoiceSearch = () => {
     const [searchText, setSearchText] = useState('');
