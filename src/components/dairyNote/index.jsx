@@ -29,10 +29,12 @@ const DairyNote = () => {
     <Wrapper>
     <div className="container">
         <h1>Write something her with your voice</h1>
-      <input type="text" 
-      placeholder="Enter your search query"
-      value={searchText}
-      onChange={(e) => setSearchText(e.target.value)} />
+      <div className="input">
+          <input type="text"
+          placeholder="Enter your search query"
+          value={searchText}
+          onChange={(e) => setSearchText(e.target.value)} />
+      </div>
       <div className='container1'>
           <button type="submit" className="button" onClick={startVoiceRecognition}>
             <img src={mikeimg} alt="Search" height="50px" />

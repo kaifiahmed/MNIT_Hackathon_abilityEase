@@ -18,11 +18,18 @@ const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
     }
-
+.input{
+    width: 80%;
+    height: 60vh;
+    border-radius: 6px;
+    border: solid black 1px;
+    overflow:hidden;
+}
 input[type="text"] {
-        width: 80%;
-        height: 60vh;
-        border-radius: 6px;
+        width: 100%;
+        outline:none;
+        border:none;
+        
 }
 `
 export default Wrapper;
