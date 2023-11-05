@@ -20,7 +20,7 @@ const App = () => {
       {/* <VoiceSearch /> */}
       <Routes>
         <Route path='/' element={<><SearchBar/> <Features /></>} />
-        <Route path="/dairy" element={<DairyNote/>} /> {/* 👈 Renders at /app/ */}
+        <Route path="/dairy" element={<DairyNote/>} /> {/* 👈 Rfasfenders at /app/ */}
       </Routes>
       <Footer/>
     </BrowserRouter>
