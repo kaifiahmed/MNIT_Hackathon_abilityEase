@@ -7,6 +7,7 @@ import VoiceSearch from './components/voiceSearch'
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import DairyNote from './components/dairyNote'
+import Footer from './components/footer'
 
 
 const App = () => {
@@ -15,12 +16,13 @@ const App = () => {
       
       <BrowserRouter>
       <NavigationBar />
-      <SearchBar/>
-      <Features />
-      <VoiceSearch />
+      {/* <Features /> */}
+      {/* <VoiceSearch /> */}
       <Routes>
+        <Route path='/' element={<><SearchBar/> <Features /></>} />
         <Route path="/dairy" element={<DairyNote/>} /> {/* 👈 Renders at /app/ */}
       </Routes>
+      <Footer/>
     </BrowserRouter>
     </div>
   )

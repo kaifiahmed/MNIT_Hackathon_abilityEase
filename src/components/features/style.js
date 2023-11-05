@@ -5,6 +5,10 @@ const Wrapper = styled.div`
     display: flex;
     justify-content: center;
   }
+  .box img {
+    width: 100%;
+    height: 100%;
+  }
 
   .main {
     padding: 0 120px;
@@ -15,12 +19,14 @@ const Wrapper = styled.div`
 
   .box {
     min-width: 250px;
-    min-height:250px;
+    min-height: 250px;
     margin: 10px;
     background-color: #bbdfff;
     border: 1px solid #000;
-    flex: 1; /* Each box takes up equal space in the row */
-    box-sizing:border-box;
+    flex: 1;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 6px;
   }
 `;
 
