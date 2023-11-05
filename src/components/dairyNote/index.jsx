@@ -1,6 +1,7 @@
 import React ,{useState} from 'react'
 import Wrapper from './style';
 import mikeimg from '../../assets/images/microphone.png'
+import saveicon from '../../assets/images/save-instagram.png'
 
 
 const DairyNote = () => {
@@ -28,16 +29,20 @@ const DairyNote = () => {
     <Wrapper>
     <div className="container">
         <h1>Write something her with your voice</h1>
-      <input type="text" 
-      placeholder="Enter your search query"
-      value={searchText}
-      onChange={(e) => setSearchText(e.target.value)} />
-      <button type="submit" className="button" onClick={startVoiceRecognition}>
-        <img src={mikeimg} alt="Search" height="50px" />
-      </button>
-      {/* <button type="submit" className="button">
-        <img src={searchbutton} alt="Search" height="50px" />
-      </button> */}
+      <div className="input">
+          <input type="text"
+          placeholder="Enter your search query"
+          value={searchText}
+          onChange={(e) => setSearchText(e.target.value)} />
+      </div>
+      <div className='container1'>
+          <button type="submit" className="button" onClick={startVoiceRecognition}>
+            <img src={mikeimg} alt="Search" height="50px" />
+          </button>
+          <button type="submit" className="button">
+            <img src={saveicon} alt="Search" height="50px" />
+          </button>
+      </div>
     </div>
   </Wrapper>
   )
