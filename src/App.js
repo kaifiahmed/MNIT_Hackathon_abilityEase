@@ -10,6 +10,7 @@ import DairyNote from './components/dairyNote'
 import Footer from './components/footer'
 import Newresult from './components/newresult';
 import AboutUs from './components/aboutus';
+import SupportPage from './components/supportPage';
 
 
 const App = () => {
@@ -24,7 +25,8 @@ const App = () => {
         <Route path='/' element={<><SearchBar/> <Features /></>} />
         <Route path="/dairy" element={<DairyNote/>} /> {/* 👈 Rfasfenders at /app/ */}
         <Route path="/news-results" element={<Newresult/>} />
-        <Route path="/aboutus" element={<AboutUs/>} /> {/* 👈 Rfasfenders at /app/ */}
+        <Route path="/aboutus" element={<AboutUs/>} />
+        <Route path="/support" element={<SupportPage/>} />  {/* 👈 Rfasfenders at /app/ */}
 
       </Routes>
       <Footer/>
